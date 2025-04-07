@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <header class="signup-head" >
+                <h1>Signup</h1>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+
+                <p>
+                    <label for="name">Full Name :</label>
+                    <input type="text" name="" id="name" placeholder="Enter your name"   />
+                    <i class="fa-solid"></i>
+                    <span id="nameError"></span>
+
+                </p>
+                <p>
+                    <label for="email">Email :</label>
+                    <input type="email" name="" id="email" placeholder="xyz@gmail.com" >
+                    <i class="fa-solid"></i>
+                    <span id="emailError"></span>
+                </p>
+                <p>
+                    <label for="password">Password :</label>
+                    <input type="password" name="" id="password" placeholder="at least 8 characters" min="8" max="20" >
+                    <i class="fa-solid"></i>
+                    <span id="passError"></span>
+                </p>
+                <p>
+                    <label for="confirm">Confirm Password :</label>
+                    <input type="password" name="" id="confirm" placeholder="at least 8 characters" min="8" max="20" >
+                    <i class="fa-solid"></i>
+                    <span id="conError"></span>
+                </p>
+                
+                <p>
+                    <input type="submit" value="Create Account" id="submitBtn">
+                </p>
+                </form>
+
+            </main>
+            <footer class="signup-footer">
+                <p>
+                    Already have an account? <a href="#">Login</a>
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="nitesh.js"></script>
+    
+</body>
+</html>
